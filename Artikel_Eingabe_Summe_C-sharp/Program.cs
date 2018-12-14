@@ -16,7 +16,7 @@ namespace Artikel_Eingabe_Summe_C_sharp
 		int anzArt1 = 0;
 		int anzArt2 = 0;
 		int anzArt3 = 0;
-		int preisArt1 = 0;
+		int preisArt1 = 0;	//double verwenden! @ Preisen, Summen
 		int preisArt2 = 0;
 		int preisArt3 = 0;
 		int summeArt123Anz = 0;
@@ -102,6 +102,7 @@ namespace Artikel_Eingabe_Summe_C_sharp
 
 			// AUSGABE
 			Console.WriteLine("_________________________________________________");
+			// hier if einbauen!
 			Console.WriteLine("Artikel: {0} | Menge: {1} | Preis {2} | SummePosten {3}", art1, anzArt1, preisArt1, summeArt1);
 			Console.WriteLine("Artikel: {0} | Menge: {1} | Preis {2} | SummePosten {3}", art2, anzArt2, preisArt2, summeArt2);
 			Console.WriteLine("Artikel: {0} | Menge: {1} | Preis {2} | SummePosten {3}", art3, anzArt3, preisArt3, summeArt3);

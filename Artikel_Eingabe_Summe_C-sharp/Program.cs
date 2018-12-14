@@ -27,66 +27,68 @@ namespace Artikel_Eingabe_Summe_C_sharp
 		
 		int anzahlArtikel;
 
-		Console.WriteLine("Bitte geben sie die Anzahl der Artikel ein:");
+		Console.Write("Bitte geben sie die Anzahl der Artikel ein: ");
 		anzahlArtikel = Convert.ToInt32(Console.ReadLine());
+		Console.WriteLine("_________________________________________________");
+		
 
 			for (int i = 0; i < anzahlArtikel; i++)
 			{
 				if (i == 0)
 				{
-					Console.WriteLine("Bitte geben sie den {0}. Artikel ein:", i+1);
+					Console.WriteLine("Bitte geben sie den Namen des {0}. Artikels ein: ", i+1);
 					art1 = Console.ReadLine();
 				}
 				if (i == 1)
 				{
-					Console.WriteLine("Bitte geben sie den {0}. Artikel ein:", i+1);
+					Console.WriteLine("Bitte geben sie den Namen des {0}. Artikels ein: ", i+1);
 					art2 = Console.ReadLine();
 				}
 				if (i == 2)
 				{
-					Console.WriteLine("Bitte geben sie den {0}. Artikel ein:", i+1);
+					Console.WriteLine("Bitte geben sie den Namen des {0}. Artikels ein: ", i+1);
 					art3 = Console.ReadLine();
 				}
 			}
-			
+			Console.WriteLine();
 			Console.WriteLine("Bitte geben sie nun die Menge der Artikel ein:");
-			
+			Console.WriteLine("_________________________________________________");	
 			for (int i = 0; i < anzahlArtikel; i++)
 			{
 				if (i == 0)
 				{
-					Console.WriteLine("Bitte geben sie die Menge des {0}. Artikels ein:", i+1);
+					Console.WriteLine("Bitte geben sie die Menge des {0}. Artikels ein: ", i+1);
 					anzArt1 = Convert.ToInt32(Console.ReadLine());
 				}
 				if (i == 1)
 				{
-					Console.WriteLine("Bitte geben sie die Menge des {0}. Artikels ein:", i+1);
+					Console.WriteLine("Bitte geben sie die Menge des {0}. Artikels ein: ", i+1);
 					anzArt2 = Convert.ToInt32(Console.ReadLine());
 				}
 				if (i == 2)
 				{
-					Console.WriteLine("Bitte geben sie die Menge des {0}. Artikels ein:", i+1);
+					Console.WriteLine("Bitte geben sie die Menge des {0}. Artikels ein: ", i+1);
 					anzArt3 = Convert.ToInt32(Console.ReadLine());
 				}
 			}
-
+			Console.WriteLine();
 			Console.WriteLine("Bitte geben sie nun die Einzelpreise der Artikel ein:");
-
+			Console.WriteLine("_________________________________________________");
 			for (int i = 0; i < anzahlArtikel; i++)
 			{
 				if (i == 0)
 				{
-					Console.WriteLine("Bitte geben sie den Einzelpreis des {0}. Artikels ein:", i+1);
+					Console.WriteLine("Bitte geben sie den Einzelpreis des {0}. Artikels ein: ", i+1);
 					preisArt1 = Convert.ToInt32(Console.ReadLine());
 				}
 				if (i == 1)
 				{
-					Console.WriteLine("Bitte geben sie den Einzelpreis des {0}. Artikels ein:", i+1);
+					Console.WriteLine("Bitte geben sie den Einzelpreis des {0}. Artikels ein: ", i+1);
 					preisArt2 = Convert.ToInt32(Console.ReadLine());
 				}
 				if (i == 2)
 				{
-					Console.WriteLine("Bitte geben sie den Einzelpreis des {0}. Artikels ein:", i+1);
+					Console.WriteLine("Bitte geben sie den Einzelpreis des {0}. Artikels ein: ", i+1);
 					preisArt3 = Convert.ToInt32(Console.ReadLine());
 				}
 			}
@@ -99,6 +101,7 @@ namespace Artikel_Eingabe_Summe_C_sharp
 			summeArt123 = summeArt1 + summeArt2 + summeArt3;
 
 			// AUSGABE
+			Console.WriteLine("_________________________________________________");
 			Console.WriteLine("Artikel: {0} | Menge: {1} | Preis {2} | SummePosten {3}", art1, anzArt1, preisArt1, summeArt1);
 			Console.WriteLine("Artikel: {0} | Menge: {1} | Preis {2} | SummePosten {3}", art2, anzArt2, preisArt2, summeArt2);
 			Console.WriteLine("Artikel: {0} | Menge: {1} | Preis {2} | SummePosten {3}", art3, anzArt3, preisArt3, summeArt3);
